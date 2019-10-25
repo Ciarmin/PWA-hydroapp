@@ -13,7 +13,7 @@
     <meta property="og:description" content="Jest to projekt stworzony przez Ciarmina" />
     <!-- full url with http(s) ie. https://ciarmin.github.io/myrepo/ -->
     <meta property="og:url" content="https://ciarmin.github.io/PWA-hydroapp/" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    <!-- full url to the image with http(s) ie. https://ciarmin.github.io/PWA-hydroapp/assets/img/cover.png. Facebook suggests at least 1200 x 630. -->
     <meta property="og:image" content="https://ciarmin.github.io/PWA-hydroapp/assets/img/cover.png" />
 
     <link rel="manifest" href="manifest.json" />
@@ -33,7 +33,11 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>Hello world - with simple PWA support!</h1>
+    <main class="hydro">
+      <div class="hydro__image"><span class="hydro__image--counter hydro__image--counter--js">12</span></div>
+      <div class="hydro__buttonpack"><button class="hydro__button--add hydro__button--add--js">dodaj szklankę</button>
+      <button class="hydro__button--remove hydro__button--remove--js">usuń szklankę</button></div>
+    </main>
 
     <script src="js/main.js"></script>
   </body>

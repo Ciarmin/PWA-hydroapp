@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i&display=swap&subset=latin-ext');
 
 html {
   box-sizing: border-box;
@@ -11,6 +11,58 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background: #3767AD;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  min-height: 100vh;
 }
+
+.hydro {
+  
+  &__image {
+    width: 280px;
+    height: 280px;
+    background-image: url("/../assets/img/water-glass.png");
+    background-size: contain;
+  }
+
+  &__image--counter {
+    color: #000;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    width: 280px; 
+    height: 280px;
+    font-size: 112px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+  }
+  &__buttonpack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 42px;
+  }
+  &__button--add {
+    width: 216px;
+    height: 47px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    font-size: 18px;
+    
+    
+  }
+  &__button--remove {
+    width: 184px;
+    height: 23px;
+    margin-top: 42px;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #F5E5E7;
+  }
+}
+
